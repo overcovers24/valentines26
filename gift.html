@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 🌻</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scene">
+        <div class="content">
+            <h1>Will You Be My Valentine? 🌻</h1>
+            
+            <div class="animals">
+                <div class="penguin">
+                    🐧
+                    <div class="ring">💍</div>
+                </div>
+                <div class="seal">🦭</div>
+            </div>
+
+            <p class="message">
+    Just like this penguin loves his seal,<br>
+    and like my camera always finds the perfect shot in you..<br>
+    My heart always finds you. ❤️
+</p>
+
+
+
+            <div class="buttons">
+                <button class="yes-btn" onclick="sayYes()">YES! 💕</button>
+                <button class="no-btn" onclick="sayNo(this)">No...</button>
+            </div>
+
+            <button class="mail-btn" onclick="openLetter()">
+                📧 Love Letter for you
+            </button>
+        </div>
+    </div>
+
+    <!-- Love Letter Modal -->
+    <div class="letter-overlay" id="letterOverlay" onclick="closeLetter()">
+        <div class="letter-container" onclick="event.stopPropagation()">
+           <button class="close-letter" onclick="closeLetter()">
+    <svg xmlns="http://www.w3.org/2000/svg" 
+         viewBox="0 0 15 15">
+        <path d="M4.036 1a4.036 4.036 0 0 0-2.854 6.89l5.964 5.964a.5.5 0 0 0 .708 0l5.964-5.965a4.036 4.036 0 0 0-5.707-5.707l-.611.61l-.61-.61A4.04 4.04 0 0 0 4.035 1"/>
+    </svg><span class="heart-x">✕</span>
+</button>
+
+
+            <div class="envelope-top"></div>
+            <div class="letter-content">
+                <div class="letter-header">
+                    <div class="letter-stamp">💌</div>
+                    <div class="letter-date">Valentine's Day 2025</div>
+                </div>
+                <div class="letter-body">
+    <p class="dear">Happy Valentine’s Day, Shreyaaa ❤️🌻</p>
+    
+    <p>Having you in my life makes me feel so lucky and happy every single day. You are truly a blessing to me, my good luck charm 🥰, and my cutuuuu Silllyyy Sealll🦭. You always believe in me, push me to do better, to be a better man for you, and motivate me to achieve my goals, what else do I need in my life partner🥹.</p>
+    
+    <p>Every moment with you is special to me, and I’ll always keep our cutee memories close to my heart. Even when you’re not around for a little while or when you get a little gussaa, I miss you more than I can explain.</p>
+    
+    <p>I wanted to ask you out for Valentine's this way🥰, thats why I didnt asked you out irl. I hope you like this gift🎀 it’s filled with all my love for you.😘</p>
+    
+    <p>Thank you for being my smile, my strength, and my favorite person. I’m so grateful to have you.🥹💓</p>
+    
+    <p class="signature">With all my love,<br>Yourrr Dewanshhhh🐧💕</p>
+</div>
+
+                <div class="letter-doodles">
+                    <span class="doodle">💕</span>
+                    <span class="doodle">🌻</span>
+                    <span class="doodle">✨</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebration Screen -->
+    <div class="celebration" id="celebration">
+        <div class="celebration-scene">
+            <div class="happy-couple">
+                <span class="happy-penguin">🐧</span>
+                <span class="hearts-between">💕💖💕</span>
+                <span class="happy-seal">🦭</span>
+            </div>
+            <div class="celebration-message">
+                <h2>Yayyyyy you said Yessss! 🎉</h2>
+<p>Shreyaaa, you said yes… you just made me the happiest penguin alive. ❤️    
+Your penguin couldn’t be happier to call you his Valentine. 🐧💕</p>
+
+                <div class="celebration-emojis">
+                    <span>💐</span>
+                    <span>🎊</span>
+                    <span>💝</span>
+                    <span>🌸</span>
+                    <span>✨</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+
+</body>
+</html>
